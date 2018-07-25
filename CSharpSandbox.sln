@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSandbox", "CSharpSandbox\CSharpSandbox.csproj", "{4A1651EC-909E-45E2-BFFD-B28DFCF40E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoAPI", "TodoAPI\TodoAPI.csproj", "{D411A827-A6F0-4697-A7DA-8775A89C926D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A1651EC-909E-45E2-BFFD-B28DFCF40E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1651EC-909E-45E2-BFFD-B28DFCF40E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1651EC-909E-45E2-BFFD-B28DFCF40E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1651EC-909E-45E2-BFFD-B28DFCF40E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D411A827-A6F0-4697-A7DA-8775A89C926D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D411A827-A6F0-4697-A7DA-8775A89C926D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D411A827-A6F0-4697-A7DA-8775A89C926D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D411A827-A6F0-4697-A7DA-8775A89C926D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F59074BB-329D-4F18-B0C3-088206EE04F8}
+	EndGlobalSection
+EndGlobal
