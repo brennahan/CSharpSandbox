@@ -49,6 +49,7 @@
     <Compile Include="DPC365.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="DPC364.cs" />
+    <Compile Include="Lambdas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
