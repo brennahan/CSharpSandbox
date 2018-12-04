@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterviewPractice.cs" />
+    <Compile Include="Practice.cs" />
+    <Compile Include="Sorting.cs" />
     <Compile Include="DPC303.cs" />
     <Compile Include="DPC363.cs" />
     <Compile Include="Dijkstra.cs" />
