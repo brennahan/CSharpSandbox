@@ -66,5 +66,83 @@ namespace CSharpSandbox
 
             return new Tuple<int, int>(num1, num2);
         }
+
+        //Directions: Standard fibonacci
+        //Status: Completed
+        public static int Fibonacci(int length)
+        {
+            int tailIndex = 1;
+            int counter = 2;
+            int[] arr = new int[3];
+            arr[0] = 0;
+            arr[1] = 1;
+
+            if (length <= 2)
+                return -1;
+
+            while (counter < length)
+            {
+                arr[Fibonacci_Mod(tailIndex + 1, 3)] = arr[Fibonacci_Mod(tailIndex, 3)] + (arr[Fibonacci_Mod(tailIndex - 1, 3)]);
+
+                tailIndex = Fibonacci_Mod(tailIndex + 1, 3);
+                counter++;
+            }
+
+
+            return arr[Math.Min(tailIndex, length - 1)];
+        }
+
+        private static int Fibonacci_Mod(int num, int mod)
+        {
+            return (num % mod + mod) % mod;
+        }
+
+        //Directions: Count the occurence of each character in String
+        //Status: Completed
+        public static void CountChars(string input)
+        {
+            //input = input.ToLower();
+
+            Dictionary<char, int> occurences = new Dictionary<char, int>();
+            
+            for(int i = 0; i < input.Length; i++)
+            {
+                if (occurences.ContainsKey(input[i]))
+                    occurences[input[i]]++;
+                else
+                    occurences.Add(input[i], 1);
+            }
+
+            foreach(var entry in occurences)
+            {
+                Console.WriteLine(entry.Key + ": " + entry.Value);
+            }
+        }
+
+        //Directions: Find all substrings given a string. Throw out Duplicate substrings.
+        //Status: Completed
+        public static void FindAllSubstrings(string input)
+        {
+            string subString;
+
+            //TEST AREA
+            Dictionary<string, bool> dictionary = new Dictionary<string, bool>();
+
+
+            for(int i = 0; i < input.Length; i++)
+            {
+                subString = "";
+                for (int j = i; j < input.Length; j++)
+                {
+                    subString += input[j];
+                    if (!dictionary.ContainsKey(subString)) dictionary.Add(subString, true);
+                }
+            }
+
+            var myReturn = dictionary.Keys.ToArray();
+
+            foreach (var val in myReturn)
+                Console.WriteLine(val);
+        }
     }
 }

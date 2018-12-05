@@ -37,8 +37,14 @@ namespace CSharpSandbox
             //var sum = InterviewPractice.OperatorlessAddition2(18, 52);
             //Console.WriteLine(sum);
 
-            var result = InterviewPractice.FindTwoMissingNumbers(new int[] { 7, 1, 5, 4, 8, 10, 6, 2 });
-            Console.WriteLine(result.Item1 + ", " + result.Item2);
+            //var result = InterviewPractice.FindTwoMissingNumbers(new int[] { 7, 1, 5, 4, 8, 10, 6, 2 });
+            //Console.WriteLine(result.Item1 + ", " + result.Item2);
+
+            //Console.WriteLine(InterviewPractice.Fibonacci(8));
+
+            //InterviewPractice.CountChars("How do you do detective, I'm hungry.");
+
+            InterviewPractice.FindAllSubstrings("apple");
 
             Console.Read();
         }
